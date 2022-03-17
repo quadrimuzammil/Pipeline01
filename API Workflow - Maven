@@ -12,7 +12,7 @@ on:
 env:
 MAVEN_CLI_OPTS: '-s settings.xml -Dmaven.repo.local=maven.repository -T 1C --batch-mode --errors'
 DOCKER_REGISTORY: 'artifacts-scm.dstcorp.net'
-DOCKER_REGISTORY_IMAGE: 'ssnchealth/pharmacy/[DOCKER IMAGE PATH]'
+DOCKER_REGISTORY_IMAGE: 'ssnchealth/pharmacy/[https://hub.docker.com/r/quadrimuzammil/api123]'
 SONAR_PROJECT_KEY: 'SET <groupId>:<artifactId> FOR ARTIFACT'
 
 Jobs:
@@ -107,8 +107,8 @@ Jobs:
     - name: Sonarqube Results
       uses: DevX/sonar-results-test@master
       with:
-         SONAR_API_KEY: ${{ secrets.SONAR_TOKEN }}
-         SONAR_PROJECT_KEY: ${{ env.SONAR_PROJECT_KEY }}
+         SONAR_API_KEY: ${{901351b9ded12d0259e6aabf41a2db267ef5dfa1}}
+         SONAR_PROJECT_KEY: ${{ http://3.110.218.122:9980/quadrimuzammil }}
          
          
   docker_package:
